@@ -32,6 +32,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('background.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 h1 {
@@ -69,4 +73,42 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.home > * {
+  margin-bottom: 1rem;
+}
+.home, .navbar {
+  border-radius: 8px;
+}
+.body-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body-top__left {
+  display: flex;
+  align-items: center;
+  column-gap: .9rem;
+}
+.body-top__right {
+  display: flex;
+  align-items: center;
+  column-gap: 1.1rem;
+}
+.body-top__right img {
+  width: 10px;
+}
+.body-top__left img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.badge-number {
+  background-color: blue;
+  padding: .5px 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 4px;
 }
